@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+     <link href="style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class = "nav">
+      <a href = "https://www.instagram.com/" class = "logo">
+        <img class = "logo_img" src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png" />
+        <div class = "line"></div>
+        <img class = "logo_text" src = img/logo_text.png />
+      </a>
+      <input type = "text" class = "search" value = "검색" onfocus = "this.value=''"/>
+      <div class = "nav_icons">
+          <img class = "item1" src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" />
+          <img class = "item2" src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"/>
+          <img class = "item3" src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"/>
+      </div>
+    </div>
+    <div class = "main">
+      <section class = "feeds">
+        <article class = "article">
+          <div class = "feeds_profile">
+            <div class = "profile_icon">
+              <a href  = "https://www.instagram.com/ryusdb/"><img class = "circle" src = "https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/58004192_2433784366854980_2844436572466577408_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=UcEmjHrv7joAX9UVg5K&oh=d591aeeb80eb8fa70ac9d04324892786&oe=5EBAC644" /></a>
+              <a href = "https://www.instagram.com/ryusdb/" class = "name">ryusdb</a>
+            </div>
+            <img class = "dots" src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" />
+          </div>
+          <div class = "feeds_img"></div> 
+          <div class = "feeds_icons">
+            <div class = "ics">
+              <img class = "ic_heart" src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" />
+              <img class = "ic_comment" src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" />
+              <img class = "ic_share" src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png" />
+            </div>
+            <img class = "ic_bookmark" src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" />
+          </div>
+          <div class = "feeds_like">
+            <img class = "like_profile" src = "https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=GoQl_r_BWPgAX9Sohdl&oh=9478c07534602da23df783fd4daeacf7&oe=5EC3EE10"></img>
+            <div class = "like_comment"><b>wecode_bootcamp</b>님 <b>외 10명</b>이 좋아합니다</div>
+          </div>
+          <div class = "feeds_cm">
+            <div class = "cm">
+              <div class = "cm_id">canon_mj</div>
+              <div class = "cm_cm">위워크에서 진행한 베이킹 클래스...</div>
+              <div class = "cm_more">더 보기</div>
+            </div>
+            <div class = "cm">
+              <div class = "cm_id">leeeeunz_</div>
+              <div class = "cm_cm">거봐 좋았잖아~~~</div>
+            </div>
+          </div>
+          <div class = "before">42분 전</div>
+
+            <div class = comment_box>
+              <input type ="text" class = "write-comments" value = "댓글 달기..." onfocus = "this.value=''"/>
+              <div class = "upload">게시</div>
+            </div>
+
+        </article>
+      </section>
+      <section class = "right">  
+        <div class = "profile"></div>
+        <aside class = "story">
+          <div class = "text">스토리</div>
+          <div class = "all">모두보기</div>
+        </aside>
+        <aside class = "recommend">
+          <div class = "text">회원님을 위한 추천</div>
+          <div class = "all">모두보기</div>
+        </aside>
+        <footer>
+          Instagram 정보 ・ 지원 ・ 홍보센터 ・ API ・ <br />
+          채용정보 ・ 개인정보처리방침 ・ 약관 ・ <br />
+          디렉터리 ・ 프로필 ・ 해시태그 ・ 언어
+          <p>© 2019 INSTAGRAM</p>
+        </footer>
+      </section>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
