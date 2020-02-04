@@ -2,25 +2,22 @@ body {
     margin: 0;
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
+    overflow: scroll;
 }
 
-
 .nav {
-    height: 75px;
-    position: fixed;
+    position: relative;
     left: 0;
-    right: 0;
     top: 0;
-    border-bottom: 1px solid #e6e6e6;
+    right: 0;
+    border-bottom: 1px solid #dbdbdb;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 160px;
+    padding: 10px 160px;
     background-color: white;
     z-index: 1;
-}
+    }
 
 
 .logo {
@@ -50,20 +47,25 @@ body {
 
 
 .search {
-    width: 230px;
-    height: 25px;
-    border: 1px solid lightgray;
+    width: 215px;
+    height: 28px;
+    border: 1px solid #dbdbdb;
     border-radius: 3px;
     background-color: #F9F9F9; 
-    background-image: url('../img/search.png');
-    background-repeat: no-repeat;
-    background-position: 85px center;
-    background-size: 15px;
-    font-size: 14px;
-    color: lightgray;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.ic_search {
+    width: 13px;
+}
+
+span {
+    color: #e3e3e3;
+    font-size: 14px;
+    padding: 0 0 0 5px;
+}
 
 .nav_icons {
     display: flex;
@@ -83,15 +85,14 @@ body {
     background-color: #F9F9F9;
     width: 100%;
     height: auto;
-    margin-top: 76px;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
-    position: sticky;
+    position: absolute;
+    z-index: -1;
 }
 
 .feeds {
-    border: 1px solid #e6e6e6;
+    border: 1px solid #dbdbdb;
     width: 600px;
     height: auto;
     top: 50px;
@@ -99,10 +100,6 @@ body {
     background-color: white;
     border-radius: 3px;
     margin: 0px 10px;
-    z-index: -1;
-}
-
-.article {
     display: flex;
     flex-direction: column;
 }
@@ -110,37 +107,36 @@ body {
 
 .feeds_profile {
     width: 600px;
-    height: 60px;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid #dbdbdb;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
 .profile_icon {
-    margin: 12px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 13px 20px;
 }
 
 .circle {
     width: 30px;
-    height: 30px;
     border-radius: 50%;
-    background-color: gray;
+    border: 1px solid lightgray;
 }
 
 .name {
     font-size: 15px;
     font-weight: 600;
     color: black;
-    margin: 0 0 0 12px;
+    margin-left: 12px;
 }
 
 .dots {
     width: 25px;
-    margin: 12px;
+    padding: 13px 20px;
     cursor: pointer;
 }
 
@@ -150,96 +146,118 @@ a {
 
 .feeds_img {
     width: 600px;
-    height: 600px;
-    background-color: lightgray;
+    height: auto;
 }
 
 .feeds_icons {
     width: 600px;
-    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
-    padding-top: 5px;
 }
 
 .ics {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 12px;
+    padding: 5px;
 }
 
-.ic_heart, .ic_comment, .ic_share, .ic_bookmark {
-    width: 30px;
+.ic_comment, .ic_share, .ic_bookmark {
+    width: 25px;
     padding: 5px;
+}
+.ic_heart {
+    padding: 5px 5px 5px 10px;
+    width: 25px;
 }
 
 
 .ic_bookmark {
-    margin: 0 12px;
+    padding: 0 10px 0 0;
 }
 
 .feeds_like {
     width: 600px;
-    height: 30px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 12px;
-    padding-bottom: 5px;
+    padding-left: 17px;
 }
 
 .like_profile {
     width: 25px;
-    height: 25px;
     border-radius: 50%;
-    background-color: gray;
 }
+
+
 .like_comment {
     font-size: 15px;
     color: black;
     margin-left: 5px;
 }
 
+
 .feeds_cm {
     width: 600px;
-    height: 45px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    padding-left: 20px;
 }
 
 .cm {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    margin-left: 10px;
-    margin-bottom: 3px;
+    padding-top: 10px;
 }
+
+.re_cm {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-top: 5px;
+}
+
 .cm_id {
     font-size: 15px;
     font-weight: bold;
     color: black;
 }
 
+.cm_id2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+
 .cm_cm {
     font-size: 15px;
     color: black;
-    margin-left: 5px;
+    padding-left: 5px;
 }
+
 
 .cm_more {
     font-size: 15px;
     color: gray;
-    margin-left: 5px;
+    padding-left: 5px;
 }
 
-.before {
+
+.hashtag {
+    color: #222d3b;
+}
+
+
+.time {
     font-size: 12px;
     color: gray;
-    margin: 0 0 5px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
 
 .write-comments {
@@ -248,21 +266,25 @@ a {
     font-size: 14px;
     color: gray;
     border: 0;
+    padding-left: 15px;
 }
+
 
 .upload {
     font-size: 14px;
     color: #2A85F9;
-    opacity: 70%;
+    opacity: 0.5;
+    border: 0;
+    outline: none;
 }
 
 .comment_box {
     display: flex;
-    padding: 0 15px;
-    justify-content: flex-between;
     align-items: center;
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid #dbdbdb;
 }
+
+
 .right {
     width: 300px;
     height: 600px;
@@ -271,39 +293,153 @@ a {
     position: relative;
 }
 
+
+.right_profile {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.name, .name2 {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.name3 {
+    padding-left: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.main_profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .story {
-    border: 1px solid #e6e6e6;
+    position: relative;
     width: 300px;
-    height: 250px;
+    height: 200px;
+    border: 1px solid #dbdbdb;
     background-color: white;
     border-radius: 3px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    padding: 3px;
+    margin-top: 20px;
 }
 
 .recommend {
-    border: 1px solid #e6e6e6;
+    position: relative;
     width: 300px;
-    height: 200px;
+    height: 190px;
+    border: 1px solid #dbdbdb;
     background-color: white;
     border-radius: 3px;
-    margin: 12px 0 0 0;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+
+.story_title, .rec_title {
+    width: 300px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    position: absolute;
 }
+
+
+.rec_profile_scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+
+.profile_scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    overflow: scroll;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+
+.profile_icon_story, .rec_profile_story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
 
 .text {
     font-size: 14px;
     color: gray;
-    margin: 12px;
+    margin: 15px;
 }
 
 .all {
-    font-size: 14px;
+    font-size: 12px;
     color: black;
-    margin: 12px;
+    margin: 15px;
+}
+
+.sub {
+    color: gray;
+    font-size: 12px;
+    margin: 0;
+}
+
+.uploadStoryTime {
+    color: gray;
+    font-size: 9px;
+    margin: 0;
+}
+
+.follow {
+    color: #2A85F9;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.sub_follow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 235px;
+}
+
+
+.id_sub {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+.stories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
 }
 
 footer {

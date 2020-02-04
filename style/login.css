@@ -33,7 +33,7 @@ body {
 }
 
 
-button {
+.bt {
     background-color: #47a2ed;
     width: 100%;
     height: 30px;
@@ -43,7 +43,7 @@ button {
     font-weight: 500;
     color: white;
     margin: 10px 0;
-    opacity: 50%;
+    opacity: 0.5;
 }
 
 .or {
@@ -72,7 +72,18 @@ button {
     width: 100%;
     height: 35px;
     font-size: 12px;
-    color: #f1f1f1;
+    color: gray;
+    background-position: 5px center;
+    padding: 0 0 0 10px;
+    margin-bottom: 6px;
+}
+
+
+.email_click, .pw_click {
+    width: 100%;
+    height: 35px;
+    font-size: 12px;
+    color: gray;
     background-position: 5px center;
     padding: 0 0 0 10px;
     margin-bottom: 6px;
@@ -108,6 +119,10 @@ input {
     background-color: #f9f9f9;
     border-radius: 2px;
     border: 1px solid  #f2f2f2;
+}
+
+::placeholder {
+    color: gray;
 }
 
 .account, .app {
